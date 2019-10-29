@@ -1,0 +1,56 @@
+header,
+footer {
+    padding: 2rem;
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+body {
+    text-align: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe67422;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 50px 25px;
+    background-color: white;
+}
+
+a {
+    margin: 1rem 2rem;
+}
+
+header>a {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    header>a {
+        display: unset;
+    }
+    a {
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+    div {
+        border: none;
+    }
+    body {
+        background: unset;
+    }
+}
+
+footer>a {}
